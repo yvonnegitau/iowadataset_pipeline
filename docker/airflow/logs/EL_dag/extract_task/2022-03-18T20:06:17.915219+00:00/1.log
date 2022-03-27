@@ -1,0 +1,24 @@
+[2022-03-18 20:06:18,910] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: EL_dag.extract_task manual__2022-03-18T20:06:17.915219+00:00 [queued]>
+[2022-03-18 20:06:18,916] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: EL_dag.extract_task manual__2022-03-18T20:06:17.915219+00:00 [queued]>
+[2022-03-18 20:06:18,916] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-18 20:06:18,916] {taskinstance.py:1244} INFO - Starting attempt 1 of 2
+[2022-03-18 20:06:18,916] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-18 20:06:18,923] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): extract_task> on 2022-03-18 20:06:17.915219+00:00
+[2022-03-18 20:06:18,926] {standard_task_runner.py:52} INFO - Started process 279 to run task
+[2022-03-18 20:06:18,929] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'EL_dag', 'extract_task', 'manual__2022-03-18T20:06:17.915219+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/extract_load_dags.py', '--cfg-path', '/tmp/tmpl8mauw6w', '--error-file', '/tmp/tmp55er13_5']
+[2022-03-18 20:06:18,929] {standard_task_runner.py:77} INFO - Job 4: Subtask extract_task
+[2022-03-18 20:06:18,980] {logging_mixin.py:109} INFO - Running <TaskInstance: EL_dag.extract_task manual__2022-03-18T20:06:17.915219+00:00 [running]> on host ec95407fa1b2
+[2022-03-18 20:06:19,013] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.9/site-packages/airflow/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-03-18 20:06:19,033] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=EL_dag
+AIRFLOW_CTX_TASK_ID=extract_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-18T20:06:17.915219+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-18T20:06:17.915219+00:00
+[2022-03-18 20:06:19,034] {logging_mixin.py:109} INFO - date................. 2022-03
+[2022-03-18 20:06:19,034] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-18 20:06:19,045] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=EL_dag, task_id=extract_task, execution_date=20220318T200617, start_date=20220318T200618, end_date=20220318T200619
+[2022-03-18 20:06:19,061] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-18 20:06:19,085] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,30 @@
+[2022-03-24 15:47:43,776] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dbt_dag.test.iowa.general_vendor_facts manual__2022-03-24T15:40:32.745573+00:00 [queued]>
+[2022-03-24 15:47:43,785] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dbt_dag.test.iowa.general_vendor_facts manual__2022-03-24T15:40:32.745573+00:00 [queued]>
+[2022-03-24 15:47:43,785] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-24 15:47:43,785] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-24 15:47:43,785] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-24 15:47:43,796] {taskinstance.py:1264} INFO - Executing <Task(BashOperator): test.iowa.general_vendor_facts> on 2022-03-24 15:40:32.745573+00:00
+[2022-03-24 15:47:43,799] {standard_task_runner.py:52} INFO - Started process 1280 to run task
+[2022-03-24 15:47:43,802] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_dag', 'test.iowa.general_vendor_facts', 'manual__2022-03-24T15:40:32.745573+00:00', '--job-id', '206', '--raw', '--subdir', 'DAGS_FOLDER/transform_dags.py', '--cfg-path', '/tmp/tmpiisg0zjw', '--error-file', '/tmp/tmpyjvm7eo4']
+[2022-03-24 15:47:43,803] {standard_task_runner.py:77} INFO - Job 206: Subtask test.iowa.general_vendor_facts
+[2022-03-24 15:47:43,860] {logging_mixin.py:109} INFO - Running <TaskInstance: dbt_dag.test.iowa.general_vendor_facts manual__2022-03-24T15:40:32.745573+00:00 [running]> on host a91ac75a8f43
+[2022-03-24 15:47:43,917] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt_dag
+AIRFLOW_CTX_TASK_ID=test.iowa.general_vendor_facts
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-24T15:40:32.745573+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-24T15:40:32.745573+00:00
+[2022-03-24 15:47:43,918] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-24 15:47:43,918] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n            cd /opt/iowa/dbt/iowa &&\n            dbt --no-write-json test --target dev --models general_vendor_facts\n            ']
+[2022-03-24 15:47:43,924] {subprocess.py:85} INFO - Output:
+[2022-03-24 15:47:47,444] {subprocess.py:89} INFO - 15:47:47  Running with dbt=1.0.4
+[2022-03-24 15:47:47,513] {subprocess.py:89} INFO - 15:47:47  Found 8 models, 2 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[2022-03-24 15:47:47,518] {subprocess.py:89} INFO - 15:47:47
+[2022-03-24 15:47:47,518] {subprocess.py:89} INFO - 15:47:47  [WARNING]: Nothing to do. Try checking your model configs and model specification args
+[2022-03-24 15:47:50,616] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-03-24 15:47:50,639] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=dbt_dag, task_id=test.iowa.general_vendor_facts, execution_date=20220324T154032, start_date=20220324T154743, end_date=20220324T154750
+[2022-03-24 15:47:50,683] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-24 15:47:50,709] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

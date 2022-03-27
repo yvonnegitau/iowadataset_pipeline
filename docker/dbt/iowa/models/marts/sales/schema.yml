@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: general_facts
+    description: >
+      Incremental partitioned table that will be using for getting aggregations from. Partitioned by months
+    columns:
+      - name: invoice_line_no
+        description: Invoice number
+        tests:
+            - not_null:
+                severity: error
+            - unique:
+                severity: error

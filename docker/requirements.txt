@@ -1,0 +1,9 @@
+wtforms
+apache-airflow[postgres]
+apache-airflow-providers-google
+dbt-core
+dbt-bigquery
+pyarrow
+pandas
+requests
+SQLAlchemy

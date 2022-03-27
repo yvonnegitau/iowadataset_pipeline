@@ -1,0 +1,136 @@
+[2022-03-21 11:01:02,539] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: EL_dag.extract_task scheduled__2012-01-02T01:00:00+00:00 [queued]>
+[2022-03-21 11:01:02,545] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: EL_dag.extract_task scheduled__2012-01-02T01:00:00+00:00 [queued]>
+[2022-03-21 11:01:02,545] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 11:01:02,545] {taskinstance.py:1244} INFO - Starting attempt 2 of 2
+[2022-03-21 11:01:02,545] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 11:01:02,552] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): extract_task> on 2012-01-02 01:00:00+00:00
+[2022-03-21 11:01:02,557] {standard_task_runner.py:52} INFO - Started process 239 to run task
+[2022-03-21 11:01:02,561] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'EL_dag', 'extract_task', 'scheduled__2012-01-02T01:00:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/extract_load_dags.py', '--cfg-path', '/tmp/tmp2wwk3pu0', '--error-file', '/tmp/tmpgtbmiwe0']
+[2022-03-21 11:01:02,562] {standard_task_runner.py:77} INFO - Job 16: Subtask extract_task
+[2022-03-21 11:01:02,611] {logging_mixin.py:109} INFO - Running <TaskInstance: EL_dag.extract_task scheduled__2012-01-02T01:00:00+00:00 [running]> on host 5908b9c456cd
+[2022-03-21 11:01:02,704] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.9/site-packages/airflow/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-03-21 11:01:02,724] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=EL_dag
+AIRFLOW_CTX_TASK_ID=extract_task
+AIRFLOW_CTX_EXECUTION_DATE=2012-01-02T01:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-01-02T01:00:00+00:00
+[2022-03-21 11:01:02,725] {logging_mixin.py:109} INFO - 01 2012
+[2022-03-21 11:01:35,830] {logging_mixin.py:109} INFO - the response is  200
+[2022-03-21 11:01:35,831] {logging_mixin.py:109} INFO - here.........
+[2022-03-21 11:01:35,867] {logging_mixin.py:109} INFO -   invoice_line_no                     date  ... sale_liters sale_gallons
+0    S03461100008  2012-01-09T00:00:00.000  ...        9.00         2.38
+1    S03839000012  2012-01-31T00:00:00.000  ...        2.25         0.59
+2    S03669300124  2012-01-19T00:00:00.000  ...       12.00         3.17
+3    S03842900046  2012-01-31T00:00:00.000  ...       10.50         2.77
+4    S03495100035  2012-01-10T00:00:00.000  ...        9.00         2.38
+
+[5 rows x 24 columns]
+[2022-03-21 11:01:35,885] {logging_mixin.py:109} INFO - Data saved..........
+[2022-03-21 11:01:35,886] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-21 11:01:35,898] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=EL_dag, task_id=extract_task, execution_date=20120102T010000, start_date=20220321T110102, end_date=20220321T110135
+[2022-03-21 11:01:35,926] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-21 11:01:36,008] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-03-21 21:26:54,179] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: EL_dag.extract_task scheduled__2012-01-02T01:00:00+00:00 [queued]>
+[2022-03-21 21:26:54,185] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: EL_dag.extract_task scheduled__2012-01-02T01:00:00+00:00 [queued]>
+[2022-03-21 21:26:54,186] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 21:26:54,186] {taskinstance.py:1244} INFO - Starting attempt 2 of 3
+[2022-03-21 21:26:54,186] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 21:26:54,194] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): extract_task> on 2012-01-02 01:00:00+00:00
+[2022-03-21 21:26:54,197] {standard_task_runner.py:52} INFO - Started process 1655 to run task
+[2022-03-21 21:26:54,200] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'EL_dag', 'extract_task', 'scheduled__2012-01-02T01:00:00+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/extract_load_dags.py', '--cfg-path', '/tmp/tmptcn0j25m', '--error-file', '/tmp/tmpxz8mv6j7']
+[2022-03-21 21:26:54,200] {standard_task_runner.py:77} INFO - Job 23: Subtask extract_task
+[2022-03-21 21:26:54,311] {logging_mixin.py:109} INFO - Running <TaskInstance: EL_dag.extract_task scheduled__2012-01-02T01:00:00+00:00 [running]> on host 7fae4c5ec6da
+[2022-03-21 21:26:54,336] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.9/site-packages/airflow/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-03-21 21:26:54,357] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=EL_dag
+AIRFLOW_CTX_TASK_ID=extract_task
+AIRFLOW_CTX_EXECUTION_DATE=2012-01-02T01:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-01-02T01:00:00+00:00
+[2022-03-21 21:26:54,358] {logging_mixin.py:109} INFO - 01 2012
+[2022-03-21 21:26:58,161] {logging_mixin.py:109} INFO - the response is  200
+[2022-03-21 21:26:58,161] {logging_mixin.py:109} INFO - here.........
+[2022-03-21 21:26:58,198] {logging_mixin.py:109} INFO -   invoice_line_no                     date  ... sale_liters sale_gallons
+0    S03662400091  2012-01-19T00:00:00.000  ...        9.00         2.38
+1    S03410400017  2012-01-03T00:00:00.000  ...        1.50         0.40
+2    S03772100149  2012-01-26T00:00:00.000  ...        0.40         0.11
+3    S03612700018  2012-01-18T00:00:00.000  ...       10.50         2.77
+4    S03653100015  2012-01-19T00:00:00.000  ...        3.00         0.79
+
+[5 rows x 24 columns]
+[2022-03-21 21:26:58,212] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/iowa/airflow/dags/extract_load.py", line 28, in get_api_data
+    df.to_parquet(f"../data/data_{year}-{month}.parquet",index=False)
+  File "/usr/local/lib/python3.9/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pandas/core/frame.py", line 2677, in to_parquet
+    return to_parquet(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/parquet.py", line 416, in to_parquet
+    impl.write(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/parquet.py", line 175, in write
+    path_or_handle, handles, kwargs["filesystem"] = _get_path_or_handle(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/parquet.py", line 101, in _get_path_or_handle
+    handles = get_handle(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '../data/data_2012-01.parquet'
+[2022-03-21 21:26:58,228] {taskinstance.py:1272} INFO - Marking task as UP_FOR_RETRY. dag_id=EL_dag, task_id=extract_task, execution_date=20120102T010000, start_date=20220321T212654, end_date=20220321T212658
+[2022-03-21 21:26:58,237] {standard_task_runner.py:89} ERROR - Failed to execute job 23 for task extract_task
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/iowa/airflow/dags/extract_load.py", line 28, in get_api_data
+    df.to_parquet(f"../data/data_{year}-{month}.parquet",index=False)
+  File "/usr/local/lib/python3.9/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pandas/core/frame.py", line 2677, in to_parquet
+    return to_parquet(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/parquet.py", line 416, in to_parquet
+    impl.write(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/parquet.py", line 175, in write
+    path_or_handle, handles, kwargs["filesystem"] = _get_path_or_handle(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/parquet.py", line 101, in _get_path_or_handle
+    handles = get_handle(
+  File "/usr/local/lib/python3.9/site-packages/pandas/io/common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '../data/data_2012-01.parquet'
+[2022-03-21 21:26:58,267] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-21 21:26:58,349] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

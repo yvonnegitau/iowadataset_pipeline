@@ -1,0 +1,25 @@
+iowa:
+  outputs:
+    dev:
+      dataset: iowa_staging
+      fixed_retries: 1
+      keyfile: /.google/credentials/google_credentials_iowa.json
+      location: us-central1
+      method: service-account
+      priority: interactive
+      project: iowa-project-de
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+    prod:
+      dataset: iowa_prod
+      fixed_retries: 1
+      keyfile: /.google/credentials/google_credentials_iowa.json
+      location: us-central1
+      method: service-account
+      priority: interactive
+      project: iowa-project-de
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+  target: dev

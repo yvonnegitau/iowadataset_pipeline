@@ -1,0 +1,39 @@
+[2022-03-24 15:46:04,589] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dbt_dag.model.iowa.general_facts manual__2022-03-24T15:40:32.745573+00:00 [queued]>
+[2022-03-24 15:46:04,596] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dbt_dag.model.iowa.general_facts manual__2022-03-24T15:40:32.745573+00:00 [queued]>
+[2022-03-24 15:46:04,596] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-24 15:46:04,596] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-24 15:46:04,596] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-24 15:46:04,605] {taskinstance.py:1264} INFO - Executing <Task(BashOperator): model.iowa.general_facts> on 2022-03-24 15:40:32.745573+00:00
+[2022-03-24 15:46:04,608] {standard_task_runner.py:52} INFO - Started process 943 to run task
+[2022-03-24 15:46:04,610] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_dag', 'model.iowa.general_facts', 'manual__2022-03-24T15:40:32.745573+00:00', '--job-id', '192', '--raw', '--subdir', 'DAGS_FOLDER/transform_dags.py', '--cfg-path', '/tmp/tmpszhog7a9', '--error-file', '/tmp/tmpv0ov88vk']
+[2022-03-24 15:46:04,611] {standard_task_runner.py:77} INFO - Job 192: Subtask model.iowa.general_facts
+[2022-03-24 15:46:04,670] {logging_mixin.py:109} INFO - Running <TaskInstance: dbt_dag.model.iowa.general_facts manual__2022-03-24T15:40:32.745573+00:00 [running]> on host a91ac75a8f43
+[2022-03-24 15:46:04,734] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt_dag
+AIRFLOW_CTX_TASK_ID=model.iowa.general_facts
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-24T15:40:32.745573+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-24T15:40:32.745573+00:00
+[2022-03-24 15:46:04,735] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-24 15:46:04,735] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n            cd /opt/iowa/dbt/iowa &&\n            dbt --no-write-json run --target dev --models general_facts\n            ']
+[2022-03-24 15:46:04,740] {subprocess.py:85} INFO - Output:
+[2022-03-24 15:46:08,470] {subprocess.py:89} INFO - 15:46:08  Running with dbt=1.0.4
+[2022-03-24 15:46:08,524] {subprocess.py:89} INFO - 15:46:08  Found 8 models, 2 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[2022-03-24 15:46:08,527] {subprocess.py:89} INFO - 15:46:08
+[2022-03-24 15:46:13,977] {subprocess.py:89} INFO - 15:46:13  Concurrency: 4 threads (target='dev')
+[2022-03-24 15:46:13,977] {subprocess.py:89} INFO - 15:46:13
+[2022-03-24 15:46:13,981] {subprocess.py:89} INFO - 15:46:13  1 of 1 START incremental model iowa_staging.general_facts....................... [RUN]
+[2022-03-24 15:46:21,689] {subprocess.py:89} INFO - 15:46:21  1 of 1 OK created incremental model iowa_staging.general_facts.................. [MERGE (3.0k rows, 1.5 MB processed) in 7.71s]
+[2022-03-24 15:46:21,691] {subprocess.py:89} INFO - 15:46:21
+[2022-03-24 15:46:21,692] {subprocess.py:89} INFO - 15:46:21  Finished running 1 incremental model in 13.16s.
+[2022-03-24 15:46:21,692] {subprocess.py:89} INFO - 15:46:21
+[2022-03-24 15:46:21,693] {subprocess.py:89} INFO - 15:46:21  Completed successfully
+[2022-03-24 15:46:21,693] {subprocess.py:89} INFO - 15:46:21
+[2022-03-24 15:46:21,693] {subprocess.py:89} INFO - 15:46:21  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2022-03-24 15:46:23,135] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-03-24 15:46:23,158] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=dbt_dag, task_id=model.iowa.general_facts, execution_date=20220324T154032, start_date=20220324T154604, end_date=20220324T154623
+[2022-03-24 15:46:23,200] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-24 15:46:23,234] {local_task_job.py:264} INFO - 4 downstream tasks scheduled from follow-on schedule check

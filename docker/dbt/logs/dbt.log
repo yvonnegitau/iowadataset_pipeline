@@ -1,0 +1,18 @@
+
+
+============================== 2022-03-21 13:04:41.024830 | 110a5642-a447-4f83-ac9d-7ea56ef4ce27 ==============================
+13:04:41.024830 [info ] [MainThread]: Running with dbt=1.0.4
+13:04:41.025124 [debug] [MainThread]: running dbt with arguments Namespace(cls=<class 'dbt.task.init.InitTask'>, debug=None, defer=None, event_buffer_size=None, fail_fast=None, log_cache_events=False, log_format=None, partial_parse=None, printer_width=None, profile=None, profiles_dir='/home/ace/.dbt', project_dir=None, project_name='iowa', record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, skip_profile_setup=False, state=None, static_parser=None, target=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='init', write_json=None)
+13:04:41.025282 [debug] [MainThread]: Tracking: tracking
+13:04:41.079836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cbc93dca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cbc94a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cbc94a2b0>]}
+13:04:41.080565 [debug] [MainThread]: Starter project path: /home/ace/anaconda3/lib/python3.8/site-packages/dbt/include/starter_project
+13:05:01.060140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cbc9524c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cbc952310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cbc952400>]}
+
+
+============================== 2022-03-21 13:05:20.563696 | 55527b71-0d55-40df-a5c3-94663372cf05 ==============================
+13:05:20.563696 [info ] [MainThread]: Running with dbt=1.0.4
+13:05:20.564019 [debug] [MainThread]: running dbt with arguments Namespace(cls=<class 'dbt.task.init.InitTask'>, debug=None, defer=None, event_buffer_size=None, fail_fast=None, log_cache_events=False, log_format=None, partial_parse=None, printer_width=None, profile=None, profiles_dir='/home/ace/.dbt', project_dir=None, project_name='iowa', record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, skip_profile_setup=False, state=None, static_parser=None, target=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='init', write_json=None)
+13:05:20.564218 [debug] [MainThread]: Tracking: tracking
+13:05:20.582945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc3683ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc3690100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc36902b0>]}
+13:05:20.583551 [info ] [MainThread]: A project called iowa already exists here.
+13:05:20.583876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc3690370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc3690730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc36902b0>]}

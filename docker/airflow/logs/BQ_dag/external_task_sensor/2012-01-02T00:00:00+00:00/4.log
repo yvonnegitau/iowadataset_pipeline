@@ -1,0 +1,24 @@
+[2022-03-21 22:29:57,341] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: BQ_dag.external_task_sensor scheduled__2012-01-02T00:00:00+00:00 [queued]>
+[2022-03-21 22:29:57,347] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: BQ_dag.external_task_sensor scheduled__2012-01-02T00:00:00+00:00 [queued]>
+[2022-03-21 22:29:57,348] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 22:29:57,348] {taskinstance.py:1244} INFO - Starting attempt 4 of 6
+[2022-03-21 22:29:57,348] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 22:29:57,355] {taskinstance.py:1264} INFO - Executing <Task(ExternalTaskSensor): external_task_sensor> on 2012-01-02 00:00:00+00:00
+[2022-03-21 22:29:57,360] {standard_task_runner.py:52} INFO - Started process 309 to run task
+[2022-03-21 22:29:57,363] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'BQ_dag', 'external_task_sensor', 'scheduled__2012-01-02T00:00:00+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/extract_load_dags.py', '--cfg-path', '/tmp/tmpl4g_wbm9', '--error-file', '/tmp/tmpjpj9o6pk']
+[2022-03-21 22:29:57,364] {standard_task_runner.py:77} INFO - Job 64: Subtask external_task_sensor
+[2022-03-21 22:29:57,496] {logging_mixin.py:109} INFO - Running <TaskInstance: BQ_dag.external_task_sensor scheduled__2012-01-02T00:00:00+00:00 [running]> on host 7fae4c5ec6da
+[2022-03-21 22:29:57,536] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=BQ_dag
+AIRFLOW_CTX_TASK_ID=external_task_sensor
+AIRFLOW_CTX_EXECUTION_DATE=2012-01-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-01-02T00:00:00+00:00
+[2022-03-21 22:29:57,537] {external_task.py:169} INFO - Poking for tasks ['remove_dataset_task'] in dag EL_dag on 2012-01-01T23:30:00+00:00 ... 
+[2022-03-21 22:30:48,102] {local_task_job.py:211} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-03-21 22:30:48,103] {process_utils.py:120} INFO - Sending Signals.SIGTERM to group 309. PIDs of all processes in the group: [309]
+[2022-03-21 22:30:48,104] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 309
+[2022-03-21 22:30:48,104] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-03-21 22:30:48,130] {process_utils.py:70} INFO - Process psutil.Process(pid=309, status='terminated', exitcode=0, started='22:29:56') (309) terminated with exit code 0

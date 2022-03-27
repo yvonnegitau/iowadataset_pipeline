@@ -1,0 +1,25 @@
+[2022-03-21 21:42:25,752] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: BQ_dag.external_task_sensor manual__2022-03-21T21:42:23.871274+00:00 [queued]>
+[2022-03-21 21:42:25,758] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: BQ_dag.external_task_sensor manual__2022-03-21T21:42:23.871274+00:00 [queued]>
+[2022-03-21 21:42:25,758] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 21:42:25,759] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-03-21 21:42:25,759] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-21 21:42:25,766] {taskinstance.py:1264} INFO - Executing <Task(ExternalTaskSensor): external_task_sensor> on 2022-03-21 21:42:23.871274+00:00
+[2022-03-21 21:42:25,771] {standard_task_runner.py:52} INFO - Started process 2589 to run task
+[2022-03-21 21:42:25,774] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'BQ_dag', 'external_task_sensor', 'manual__2022-03-21T21:42:23.871274+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/extract_load_dags.py', '--cfg-path', '/tmp/tmpen4oqa72', '--error-file', '/tmp/tmp2hsifuuz']
+[2022-03-21 21:42:25,775] {standard_task_runner.py:77} INFO - Job 40: Subtask external_task_sensor
+[2022-03-21 21:42:25,921] {logging_mixin.py:109} INFO - Running <TaskInstance: BQ_dag.external_task_sensor manual__2022-03-21T21:42:23.871274+00:00 [running]> on host 7fae4c5ec6da
+[2022-03-21 21:42:25,976] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=BQ_dag
+AIRFLOW_CTX_TASK_ID=external_task_sensor
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-21T21:42:23.871274+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-21T21:42:23.871274+00:00
+[2022-03-21 21:42:25,977] {external_task.py:169} INFO - Poking for tasks None in dag EL_dag on 2022-03-21T21:42:23.871274+00:00 ... 
+[2022-03-21 21:43:26,048] {external_task.py:169} INFO - Poking for tasks None in dag EL_dag on 2022-03-21T21:42:23.871274+00:00 ... 
+[2022-03-21 21:43:51,823] {local_task_job.py:211} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-03-21 21:43:51,824] {process_utils.py:120} INFO - Sending Signals.SIGTERM to group 2589. PIDs of all processes in the group: [2589]
+[2022-03-21 21:43:51,824] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 2589
+[2022-03-21 21:43:51,825] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-03-21 21:43:51,851] {process_utils.py:70} INFO - Process psutil.Process(pid=2589, status='terminated', exitcode=0, started='21:42:24') (2589) terminated with exit code 0
