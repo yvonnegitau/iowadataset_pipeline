@@ -30,7 +30,6 @@ with DAG(
     schedule_interval = "0 1 2 * *",
     default_args = default_args,
     start_date =datetime(2012,1,1), 
-    end_date =datetime(2012,4,1),  
     max_active_runs = 3,
     tags = ['iowa'],
 ) as dag:

@@ -63,8 +63,8 @@ services:
       AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials_iowa.json'
       GCP_PROJECT_ID: 'iowa-project-de'
       GCP_GCS_BUCKET: 'iowa_data_lake'
-      GCP_BQ_DATASET: 'iowa_data'
-      DEPLOY_STATUS: 'dev'
+      GCP_BQ_DATASET: 'iowa_data_prod'
+      DEPLOY_STATUS: 'prod'
 
     depends_on:
       - postgres-airflow

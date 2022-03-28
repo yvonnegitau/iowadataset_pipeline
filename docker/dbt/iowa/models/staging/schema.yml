@@ -1,8 +1,8 @@
 version: 2
 sources:
-  - name: iowa_staging
+  - name: iowa_prod
     database: iowa-project-de
-    schema: iowa_data
+    schema: iowa_data_prod
 
     tables:
       - name: raw_data

@@ -12,7 +12,7 @@ dag = DAG(
     'dbt_dag',
     start_date=days_ago(1),
     description='A dbt wrapper for airflow',
-    schedule_interval='0 1 2 * *',
+    schedule_interval='0 1 3 * *',
 )
 
 def load_manifest():

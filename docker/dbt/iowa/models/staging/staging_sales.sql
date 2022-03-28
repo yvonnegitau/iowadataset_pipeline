@@ -27,7 +27,7 @@ select
 
 
 
-from {{source('iowa_staging','raw_data')}}
+from {{source('iowa_prod','raw_data')}}
 -- {% if var('is_test_run',default=true)%}
 --     limit 100
 -- {% endif %}
