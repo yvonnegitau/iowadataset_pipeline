@@ -1,6 +1,6 @@
 import os
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 
 
@@ -70,7 +70,7 @@ with DAG(
     dag_id = "BQ_dag",
     schedule_interval = "@once",
     default_args = default_args,
-    start_date =datetime(2012,1,1),    
+    start_date =datetime(2012,1,4),    
     max_active_runs = 3,
     catchup=False,
     tags = ['iowa'],
@@ -79,7 +79,7 @@ with DAG(
     trigger_dependent_dag = TriggerDagRunOperator(
         task_id="trigger_dependent_dag",
         trigger_dag_id="EL_dag",
-        execution_date=datetime(2012,1,4),
+        execution_date=datetime(2012,1,4,tzinfo=timezone.utc),
         wait_for_completion=True
     )
 
