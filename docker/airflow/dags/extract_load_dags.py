@@ -11,6 +11,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
 from extract_load import get_api_data, upload_to_gcs
+from airflow.utils.dates import days_ago
 
 parquet_path_file = "/opt/iowa/data/data_{{execution_date.strftime(\'%Y-%m\')}}.parquet"
 parquet_file = "data_{{execution_date.strftime(\'%Y-%m\')}}.parquet"
@@ -78,7 +79,7 @@ with DAG(
     trigger_dependent_dag = TriggerDagRunOperator(
         task_id="trigger_dependent_dag",
         trigger_dag_id="EL_dag",
-        execution_date=datetime(2012,1,1),
+        execution_date=datetime(2012,1,4),
         wait_for_completion=True
     )
 
