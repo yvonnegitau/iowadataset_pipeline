@@ -79,7 +79,7 @@ with DAG(
     trigger_dependent_dag = TriggerDagRunOperator(
         task_id="trigger_dependent_dag",
         trigger_dag_id="EL_dag",
-        execution_date=datetime(2012,1,4,tzinfo=timezone.utc),
+        execution_date=datetime(2012,1,3,tzinfo=timezone.utc),
         wait_for_completion=True
     )
 
