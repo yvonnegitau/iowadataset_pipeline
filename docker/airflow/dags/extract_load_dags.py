@@ -27,7 +27,7 @@ default_args = {
 
 with DAG(
     dag_id = "EL_dag",
-    schedule_interval = "0 1 2 * *",
+    schedule_interval = "0 1 3 * *",
     default_args = default_args,
     start_date =datetime(2012,1,1), 
     max_active_runs = 3,
