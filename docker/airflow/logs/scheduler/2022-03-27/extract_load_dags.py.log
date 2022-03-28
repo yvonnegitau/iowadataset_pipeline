@@ -6846,3 +6846,43 @@
 [2022-03-27 23:57:16,903] {logging_mixin.py:109} INFO - [2022-03-27 23:57:16,903] {dag.py:2937} INFO - Setting next_dagrun for BQ_dag to None
 [2022-03-27 23:57:16,904] {logging_mixin.py:109} INFO - [2022-03-27 23:57:16,904] {dag.py:2937} INFO - Setting next_dagrun for EL_dag to None
 [2022-03-27 23:57:16,910] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/extract_load_dags.py took 0.554 seconds
+[2022-03-27 23:57:47,493] {processor.py:163} INFO - Started process (PID=10270) to work on /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:57:47,494] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/extract_load_dags.py for tasks to queue
+[2022-03-27 23:57:47,494] {logging_mixin.py:109} INFO - [2022-03-27 23:57:47,494] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:57:48,062] {processor.py:654} INFO - DAG(s) dict_keys(['EL_dag', 'BQ_dag']) retrieved from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:57:48,069] {logging_mixin.py:109} INFO - [2022-03-27 23:57:48,069] {dag.py:2398} INFO - Sync 2 DAGs
+[2022-03-27 23:57:48,079] {logging_mixin.py:109} INFO - [2022-03-27 23:57:48,079] {dag.py:2937} INFO - Setting next_dagrun for BQ_dag to None
+[2022-03-27 23:57:48,080] {logging_mixin.py:109} INFO - [2022-03-27 23:57:48,080] {dag.py:2937} INFO - Setting next_dagrun for EL_dag to None
+[2022-03-27 23:57:48,086] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/extract_load_dags.py took 0.595 seconds
+[2022-03-27 23:58:18,628] {processor.py:163} INFO - Started process (PID=10292) to work on /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:58:18,629] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/extract_load_dags.py for tasks to queue
+[2022-03-27 23:58:18,629] {logging_mixin.py:109} INFO - [2022-03-27 23:58:18,629] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:58:19,141] {processor.py:654} INFO - DAG(s) dict_keys(['EL_dag', 'BQ_dag']) retrieved from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:58:19,148] {logging_mixin.py:109} INFO - [2022-03-27 23:58:19,148] {dag.py:2398} INFO - Sync 2 DAGs
+[2022-03-27 23:58:19,156] {logging_mixin.py:109} INFO - [2022-03-27 23:58:19,156] {dag.py:2937} INFO - Setting next_dagrun for BQ_dag to None
+[2022-03-27 23:58:19,157] {logging_mixin.py:109} INFO - [2022-03-27 23:58:19,157] {dag.py:2937} INFO - Setting next_dagrun for EL_dag to None
+[2022-03-27 23:58:19,163] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/extract_load_dags.py took 0.537 seconds
+[2022-03-27 23:58:49,758] {processor.py:163} INFO - Started process (PID=10314) to work on /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:58:49,758] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/extract_load_dags.py for tasks to queue
+[2022-03-27 23:58:49,759] {logging_mixin.py:109} INFO - [2022-03-27 23:58:49,758] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:58:50,261] {processor.py:654} INFO - DAG(s) dict_keys(['EL_dag', 'BQ_dag']) retrieved from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:58:50,270] {logging_mixin.py:109} INFO - [2022-03-27 23:58:50,270] {dag.py:2398} INFO - Sync 2 DAGs
+[2022-03-27 23:58:50,284] {logging_mixin.py:109} INFO - [2022-03-27 23:58:50,283] {dag.py:2937} INFO - Setting next_dagrun for BQ_dag to None
+[2022-03-27 23:58:50,286] {logging_mixin.py:109} INFO - [2022-03-27 23:58:50,286] {dag.py:2937} INFO - Setting next_dagrun for EL_dag to None
+[2022-03-27 23:58:50,294] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/extract_load_dags.py took 0.538 seconds
+[2022-03-27 23:59:20,883] {processor.py:163} INFO - Started process (PID=10336) to work on /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:59:20,885] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/extract_load_dags.py for tasks to queue
+[2022-03-27 23:59:20,885] {logging_mixin.py:109} INFO - [2022-03-27 23:59:20,885] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:59:21,404] {processor.py:654} INFO - DAG(s) dict_keys(['EL_dag', 'BQ_dag']) retrieved from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:59:21,412] {logging_mixin.py:109} INFO - [2022-03-27 23:59:21,412] {dag.py:2398} INFO - Sync 2 DAGs
+[2022-03-27 23:59:21,420] {logging_mixin.py:109} INFO - [2022-03-27 23:59:21,420] {dag.py:2937} INFO - Setting next_dagrun for BQ_dag to None
+[2022-03-27 23:59:21,421] {logging_mixin.py:109} INFO - [2022-03-27 23:59:21,421] {dag.py:2937} INFO - Setting next_dagrun for EL_dag to None
+[2022-03-27 23:59:21,426] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/extract_load_dags.py took 0.544 seconds
+[2022-03-27 23:59:52,025] {processor.py:163} INFO - Started process (PID=10358) to work on /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:59:52,026] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/extract_load_dags.py for tasks to queue
+[2022-03-27 23:59:52,026] {logging_mixin.py:109} INFO - [2022-03-27 23:59:52,026] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:59:52,539] {processor.py:654} INFO - DAG(s) dict_keys(['EL_dag', 'BQ_dag']) retrieved from /opt/iowa/airflow/dags/extract_load_dags.py
+[2022-03-27 23:59:52,546] {logging_mixin.py:109} INFO - [2022-03-27 23:59:52,546] {dag.py:2398} INFO - Sync 2 DAGs
+[2022-03-27 23:59:52,558] {logging_mixin.py:109} INFO - [2022-03-27 23:59:52,558] {dag.py:2937} INFO - Setting next_dagrun for BQ_dag to None
+[2022-03-27 23:59:52,560] {logging_mixin.py:109} INFO - [2022-03-27 23:59:52,560] {dag.py:2937} INFO - Setting next_dagrun for EL_dag to None
+[2022-03-27 23:59:52,566] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/extract_load_dags.py took 0.542 seconds

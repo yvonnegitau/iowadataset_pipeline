@@ -6186,3 +6186,31 @@
 [2022-03-27 23:57:42,515] {logging_mixin.py:109} INFO - [2022-03-27 23:57:42,515] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-03-27 23:57:42,528] {logging_mixin.py:109} INFO - [2022-03-27 23:57:42,528] {dag.py:2937} INFO - Setting next_dagrun for dbt_dag to 2022-04-02 01:00:00+00:00
 [2022-03-27 23:57:42,536] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/transform_dags.py took 0.057 seconds
+[2022-03-27 23:58:12,609] {processor.py:163} INFO - Started process (PID=10287) to work on /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:58:12,610] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/transform_dags.py for tasks to queue
+[2022-03-27 23:58:12,610] {logging_mixin.py:109} INFO - [2022-03-27 23:58:12,610] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:58:12,636] {processor.py:654} INFO - DAG(s) dict_keys(['dbt_dag']) retrieved from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:58:12,643] {logging_mixin.py:109} INFO - [2022-03-27 23:58:12,643] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-27 23:58:12,652] {logging_mixin.py:109} INFO - [2022-03-27 23:58:12,652] {dag.py:2937} INFO - Setting next_dagrun for dbt_dag to 2022-04-02 01:00:00+00:00
+[2022-03-27 23:58:12,660] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/transform_dags.py took 0.052 seconds
+[2022-03-27 23:58:42,740] {processor.py:163} INFO - Started process (PID=10309) to work on /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:58:42,740] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/transform_dags.py for tasks to queue
+[2022-03-27 23:58:42,741] {logging_mixin.py:109} INFO - [2022-03-27 23:58:42,741] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:58:42,766] {processor.py:654} INFO - DAG(s) dict_keys(['dbt_dag']) retrieved from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:58:42,773] {logging_mixin.py:109} INFO - [2022-03-27 23:58:42,773] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-27 23:58:42,782] {logging_mixin.py:109} INFO - [2022-03-27 23:58:42,782] {dag.py:2937} INFO - Setting next_dagrun for dbt_dag to 2022-04-02 01:00:00+00:00
+[2022-03-27 23:58:42,787] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/transform_dags.py took 0.049 seconds
+[2022-03-27 23:59:12,864] {processor.py:163} INFO - Started process (PID=10331) to work on /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:59:12,865] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/transform_dags.py for tasks to queue
+[2022-03-27 23:59:12,865] {logging_mixin.py:109} INFO - [2022-03-27 23:59:12,865] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:59:12,891] {processor.py:654} INFO - DAG(s) dict_keys(['dbt_dag']) retrieved from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:59:12,898] {logging_mixin.py:109} INFO - [2022-03-27 23:59:12,898] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-27 23:59:12,907] {logging_mixin.py:109} INFO - [2022-03-27 23:59:12,907] {dag.py:2937} INFO - Setting next_dagrun for dbt_dag to 2022-04-02 01:00:00+00:00
+[2022-03-27 23:59:12,912] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/transform_dags.py took 0.050 seconds
+[2022-03-27 23:59:42,994] {processor.py:163} INFO - Started process (PID=10353) to work on /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:59:42,994] {processor.py:642} INFO - Processing file /opt/iowa/airflow/dags/transform_dags.py for tasks to queue
+[2022-03-27 23:59:42,994] {logging_mixin.py:109} INFO - [2022-03-27 23:59:42,994] {dagbag.py:500} INFO - Filling up the DagBag from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:59:43,021] {processor.py:654} INFO - DAG(s) dict_keys(['dbt_dag']) retrieved from /opt/iowa/airflow/dags/transform_dags.py
+[2022-03-27 23:59:43,028] {logging_mixin.py:109} INFO - [2022-03-27 23:59:43,028] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-27 23:59:43,037] {logging_mixin.py:109} INFO - [2022-03-27 23:59:43,037] {dag.py:2937} INFO - Setting next_dagrun for dbt_dag to 2022-04-02 01:00:00+00:00
+[2022-03-27 23:59:43,042] {processor.py:171} INFO - Processing /opt/iowa/airflow/dags/transform_dags.py took 0.050 seconds
