@@ -133,7 +133,8 @@ dmypy.json
 *.tfstate
 *.tfstate.*
 **.terraform
-**.terraform.lock.*
+terraform/.terraform
+terraform/.terraform.lock.*
 **google_credentials.json
 **logs/
 **.env
