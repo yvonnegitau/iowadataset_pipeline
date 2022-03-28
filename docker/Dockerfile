@@ -11,6 +11,7 @@ RUN mkdir /project
 COPY scripts/ /project/scripts/
 
 COPY dbt/profiles.yml /root/.dbt/profiles.yml
+COPY ~/.google/credentials/google_credentials_iowa.json /.google/credentials/google_credentials_iowa.json
 
 RUN chmod +x /project/scripts/airflow_init.sh
 
