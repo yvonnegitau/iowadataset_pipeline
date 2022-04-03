@@ -14,7 +14,7 @@ select
     store_location,
     county,
     category_name,
-    vendor_name,
+    lower(vendor_name),
     itemno,
     im_desc,
     cast(pack as integer) as pack,
