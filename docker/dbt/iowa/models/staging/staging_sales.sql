@@ -7,7 +7,7 @@ partition_by = {
 select
     invoice_line_no,
     cast(date as timestamp) as sales_date,
-    name as store_name,
+    lower(name) as store_name,
     address,
     city,
     zipcode,

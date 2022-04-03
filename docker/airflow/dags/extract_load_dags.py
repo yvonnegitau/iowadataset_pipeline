@@ -70,8 +70,7 @@ with DAG(
     dag_id = "BQ_dag",
     schedule_interval = "@once",
     default_args = default_args,
-    start_date =datetime(2012,1,3),    
-    max_active_runs = 3,
+    start_date =datetime(2012,1,3),
     catchup=False,
     tags = ['iowa'],
 ) as dag_bq:
