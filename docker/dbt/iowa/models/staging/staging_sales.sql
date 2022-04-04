@@ -13,7 +13,7 @@ select
     zipcode,
     store_location,
     county,
-    category_name,
+    lower(category_name) as category_name,
     lower(vendor_name) as vendor_name,
     itemno,
     im_desc,
