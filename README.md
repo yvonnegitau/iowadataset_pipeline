@@ -9,7 +9,9 @@ Time period - The data starts in 2021, January 1st to now. It is upated every mo
 Size - 23.3M rows and 24 Columns. However using the API you can only get 1000 rows per month.
 
 Objective - Get State level, vendor level and store level report on the sales of liquor
+
         - Understand the most demanded liquors and is there a trend
+        
         - Look at who is purchasing the liquor
 
 ## Stack
